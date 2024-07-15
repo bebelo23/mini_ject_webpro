@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="html.css">
+    <title>REACT</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="welcome">LET'S LEARN REACT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JAVASCRIPT.html">JAVASCRIPT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ANGULAR.html">ANGULAR</a></li>
+            <li><a href="DJANGO.html">DJANGO</a></li>
+            <li><a href="VANILLA.html">VANILLA</a></li>
+            <li><a href="BOOTSTRAP.html">BOOTSTRAP</a></li>
+            <li><a href="TAILWIND.html">TAILWIND</a></li>
+            <li><a href="BULMA.html">BULMA</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="des-head">What Is React: Understanding the Features and How to Deploy for Modern Web Development</h2>
+            <p class="des-text">
+                React is one of the most popular JavaScript libraries for developing mobile and web applications. Developed by Meta 
+                (formerly Facebook), React empowers developers to create reusable components to build user interfaces (UIs).
+                It’s important to note that React is not a framework. That’s because it’s only responsible for rendering the components of an application’s view layer. However, React 
+                offers an alternative to frameworks like Angular and Vue, enabling you to construct complex functionalities alongside it.
+            </p>
+            <p>
+                This article will explain how React works, explore its features, and discuss the benefits of using React.js for front-end developers. Furthermore, 
+                we’ll compare React.js vs React Native, discussing their web and mobile app development functions.
+            </p>
+        </section>
+        <br>
+        <section>
+            <h3>How Does React Work?</h3>
+            <p>
+                React introduces JSX, a syntax extension that seamlessly combines JavaScript and HTML code. 
+                JSX tags resemble XML with a few distinctions.
+            </p>
+            <p>
+                For instance, React uses className instead of the traditional class attribute for CSS classes. Numeric 
+                values and expressions are enclosed in curly brackets, while quotation marks denote strings, similar to JavaScript.
+            </p>
+            <p>
+                The following is an example of a React code snippet:
+            </p>
+            <section class="special">
+                <div class="gray-container1">
+                        <p>&lt;MyCounter count={3 + 5} /&gt;</p>
+                        <p>const GameScores = { player1: 2, player2: 5 };</p>
+                        <p>&lt;DashboardUnit data-index="2"&gt;</p>
+                        <p>&lt;h1&gt;Scores&lt;/h1&gt;</p>
+                        <p>&lt;Scoreboard className="results" scores={GameScores} /&gt;</p>
+                        <p>&lt;/DashboardUnit&gt;;</p>
+
+                </div>
+            </section>
+        </section>
+        <br>
+        <section>
+            <h3>Why Use React?</h3>
+            <ul>
+                <li>1. Easy to Use
+                    <p>Web developers with JavaScript knowledge can learn how to use React quickly
+                        since it relies on plain JavaScript and follows a component-based approach. With it, you can develop web-based applications.
+                    </p>
+                </li>
+                <li>2. Supports Reusable Components
+                    <p>
+                        React lets you reuse components that have been developed for other applications. As such, you can pre-build React components to significantly reduce the 
+                        development time for complex web applications.
+                    </p>
+                    <p>Furthermore, React allows you to nest components within others to create complex functions without bloating the code. Each 
+                        React component has its controls, making maintenance seamless.
+                    </p>
+                </li>
+                <li>3. Easier Component Writing
+                    <p>
+                        React enables you to combine JavaScript objects with HTML syntax and tags. You can also write components and add React to an existing HTML page with JSX integration. JSX simplifies multi-function rendering, keeping the 
+                        code concise without limiting the app’s capabilities.
+                    </p>
+                    <p>
+                        React’s official command-line interface (CLI) tool, called Create React App, further streamlines the development of single-page applications. It features a modern build setup process with
+                         pre-configured tools that are excellent for learning React.
+                    </p>
+                <li>4. High Performance
+                    <p>
+                        The Virtual Document Object Model allows React to update the DOM tree efficiently. By storing Virtual DOM in memory, React eliminates 
+                        excessive re-rendering that could harm performance.
+                        Additionally, React’s one-way data binding between elements streamlines the debugging process. Any modifications to child components won’t affect 
+                        the parent structure, reducing the risk of errors.
+                    </p>
+                </li>
+                <li>5. SEO Friendly
+                    <p>
+                        React can improve web applications’ search engine optimization (SEO) by enhancing their performance and reducing the time it takes for JavaScript code loads. 
+                        Virtual DOM implementation contributes to faster page speeds.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>How to Use React?</h4>
+            <p>Implementing web development with React involves various steps and best practices to ensure efficient and maintainable code. Follow these steps to get started with React:</p>
+            <ul>
+                <li>
+                    1.Check Node.js and npm Installation
+                    <p>Before working with React, install Node.js and npm (Node Package Manager) on your system. You can verify their installation by running 
+                        the following commands in your terminal:</p>
+                        <section class="special">
+                            <div class="gray-container">
+                                <p class="gray">node -v</p>
+                                <p class="gray">npm -v</p>
+                            </div>
+                </li>
+                <li>
+                    2. Create React App
+                    <p>
+                        React offers a convenient tool called Create React App 
+                        that simplifies project setup. To create a new React app, execute the following command:
+                    </p>
+                    <section class="special">
+                        <div class="gray-container">
+                            <p class="gray">npx create-react-app my-react-app</p>
+                        </div>
+                    </section>
+                        <p>Replace my-react-app with your desired application name. This command creates a new React project with the necessary files and dependencies.</p>
+                </li>
+                <li>
+                    3. Navigate to Your Project Directory
+                    <p>Access your project directory using the following command:</p>
+                    <section class="special">
+                        <div class="gray-container">
+                            <p class="gray">cd my-react-app</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    4. Start the Development Server
+                    <p>Launch the development server to view your React app in action:</p>
+                    <section class="special">
+                        <div class="gray-container">
+                            <p class="gray">npm start</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    5. Explore the Project Structure
+                    <p>Take a moment to explore the project structure created by the Create React App. Key directories include:</p>
+                    <li>src – this folder contains your application’s source code.</li>
+                    <li>public – this folder includes static assets and the HTML template for your app.</li>
+                </li>
+                <br>
+                <br>
+                <li>
+                    6. Create Your First React Component
+                    <p>
+                        Open the src directory and navigate to the App.js file. 
+                        This file serves as the entry point of your React app. Modify the contents of this file to create your first React component.
+                    </p>
+                    <p>Here’s a basic example of a functional component:</p>
+                    <div class="special">
+                        <div class="gray-container1">
+                            <p>import React from 'react';</p>
+                            <p>function App() {</p>
+                            <p> return (</p>
+                            <p>&lt;div&gt;</p>
+                            <p>&lt;h1&gt;Hello, React!&lt;/h1&gt;</p>
+                            <p>&lt;/div&gt;</p>
+                            <p> );</p>
+                            <p>}</p>
+                            <p>export default App;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    7. Render Your Component
+                    <p>React components receive data and determine what should appear on the client’s side. To display your component,
+                        render it in the src/index.js file:</p>
+                        <div class="special">
+                            <div class="gray-container1">
+                                <p>import React from 'react';</p>
+                                <p>import ReactDOM from 'react-dom';</p>
+                                <p>import App from './App';</p>
+                                <p>ReactDOM.render(<App />, document.getElementById('root'));</p>
+                        </div>
+                </li>
+                <li>
+                    8. Start Building Your App
+                    <p>
+                        With your first React component ready, you can continue to build your React application. Create additional components, handle user interactions, 
+                        and manage states as your project evolves.
+                    </p>
+                </li>
+                <p>
+                    Learning React coding is relatively easy for developers with JavaScript experience, thanks to its component-based architecture and straightforward concepts. Numerous React docs, tutorials, and the support of the React community can assist developers 
+                    in mastering React quickly. However, the learning curve can vary based on the individual’s prior programming knowledge.
+                </p>
+                </section>
+            </ul>
+        </section>
+    <footer>
+        <p>65070127 Panalee chuckseeda</p>
+    </footer>
+</body>
+
+</html>

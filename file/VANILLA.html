@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vanilla.css">
+    <title>VANILLA</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="welcome">LET'S LEARN VANILLA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JAVASCRIPT.html">JAVASCRIPT</a></li>
+            <li><a href="REACT.html">REACT</a></li>
+            <li><a href="ANGULAR.html">ANGULAR</a></li>
+            <li><a href="DJANGO.html">DJANGO</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="BOOTSTRAP.html">BOOTSTRAP</a></li>
+            <li><a href="TAILWIND.html">TAILWIND</a></li>
+            <li><a href="BULMA.html">BULMA</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="des-head">What is Vanilla Javascript?</h2>
+            <p class="des-text">
+                Vanilla Javascript Concepts you need to know before learning a JS Framework/Library
+            </p>
+            <p>
+                Vanilla JavaScript is a term used to refer to JavaScript code that is written without the aid of any
+                external libraries or frameworks. It is simply a pure JavaScript code written in its raw form, without
+                any plugins or other libraries. While JavaScript itself has become a popular language for web
+                development, many developers prefer to employ JavaScript frameworks such as React, Angular, and Vue in
+                order to speed up the development process. Although frameworks can make development easier,
+                they can also add complexity to the code and can take away from the true power of JavaScript.
+            </p>
+        </section>
+        <br>
+        <section>
+            <h3>The Ideas</h3>
+            <p>
+                Before learning any framework, developers need to be familiar with the following ideas.
+            </p>
+            <li>DOM Manipulation:
+                <p>
+                    DOM stands for Document Object Model, and it is the way that web
+                    browsers interpret HTML and CSS. DOM manipulation is the process of manipulating the document object
+                    model in order to change the structure or content of a web page. This can be done with vanilla
+                    JavaScript using methods such as document.createElement(), document.getElementById(), and
+                    document.querySelector().
+                </p>
+            </li>
+            <li>Event Handling:
+                <p>
+                    This is the process of responding to user input and browser events. This can be done with vanilla
+                    JavaScript using the addEventListener() method.
+                    This method allows developers to specify what function should be executed when certain events occur,
+                    such as when a user clicks a button or when a page loads.
+                </p>
+            </li>
+            <li>AJAX:
+                <p>
+                    AJAX stands for Asynchronous JavaScript and XML. It is used for making asynchronous requests to a
+                    server in order to update parts of a web page without reloading the entire page.
+                    This can be done with vanilla JavaScript using the XMLHttpRequest object.
+                </p>
+            </li>
+            <li>Object-Oriented Programming:
+                <p>
+                    Object-oriented programming (OOP) is a programming paradigm that allows developers to structure their
+                code in an organized, modular way.
+                Vanilla JavaScript supports OOP through the use of classes, objects, and methods.
+                </p>
+            </li>
+            <li>Functions:
+                <p>
+                    Functions are blocks of code that can be executed multiple times with different inputs.
+                Vanilla JavaScript supports functions through the use of the function keyword.
+                </p>
+            </li>
+        </section>
+        <br>
+        <section>
+            <h3>ES6, or ECMAScript 6 (ES What…?)</h3>
+            <p>
+                ES6, or ECMAScript 6, is a major update to the JavaScript language and it marked a significant change to
+                the language. It was released in 2015 and provides a number of new features, syntax changes, and
+                optimizations that make coding in JavaScript more efficient, simpler, and easier to understand. As such,
+                ES6 is becoming increasingly important for web developers to know, especially those who are interested
+                in learning any framework.
+                In this article, we will discuss the ES6 concepts you need to know before learning React JS.
+            </p>
+            <p>
+                Now, let’s discuss the ES6 concepts you need to know before starting to learn React JS.
+            </p>
+            <ul>
+                <li>1. Arrow Functions
+                    <p>Arrow functions are a new syntax introduced in ES6 that allow you to write functions in a more
+                        concise way. They are also known as “fat arrows” because of the “=>”
+                        symbol that is used to define them. Let’s look at an example of an arrow function:
+                    </p>
+                    <p> const greet = (name) => { console.log(`Hello, ${name}!`); }
+
+                        greet('John'); // prints 'Hello, John!' </p>
+                </li>
+                <li>2. Template Literals
+                    <p>
+                        Template literals are another new feature introduced in ES6. They allow you to write strings
+                        that can span multiple lines and contain variables. They are also
+                        known as “template strings” because they are surrounded by backticks (`). Let’s look at an
+                        example:
+                    </p>
+                    <p>const name = 'John';
+
+                        console.log(`Hello, ${name}!`); // prints 'Hello, John!'
+                    </p>
+                </li>
+                <li>3. Destructuring
+                    <p>
+                        Destructuring is a new syntax in ES6 that allows you to easily extract values from objects and
+                        arrays. It can be used to assign
+                        multiple variables at once and make your code more readable. Let’s look at an example:
+                    </p>
+                    <p>
+                        const person = { name: 'John', age: 32, };
+
+                        const { name, age } = person;
+
+                        console.log(name); // prints 'John'
+
+                        console.log(age); // prints 32
+                    </p>
+                <li>4.Classes
+                    <p>
+                        Classes are a new feature in ES6 that allows you to create objects that share the same
+                        properties and methods. It is an object-oriented programming language, which means that it
+                        allows you to create classes that can be used to create multiple objects. Let’s look at an
+                        example:
+                    </p>
+                    <p>
+                        class Person {
+
+                        constructor(name, age) {
+
+                        this.name = name; this.age = age;
+
+                        }
+
+                        greet() {
+
+                        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+
+                        }
+
+                        }
+
+                        const john = new Person('Doe', 34);
+
+                        john.greet(); // prints 'Hello, my name is Doe and I am 34 years old.'
+                    </p>
+                </li>
+                <li>5.Spread and Rest Operator
+                    <p>
+                        The spread operator allows us to spread out elements of an iterable (like an array or string)
+                        into multiple elements.
+                    </p>
+                    <p>
+                        let arr1 = [1, 2, 3];
+
+                        let arr2 = [4, 5, 6];
+                        //Combine the two arrays with the spread operator let combined
+
+                        Arr = [...arr1, ...arr2];
+
+                        console.log(combinedArr); //prints: [1, 2, 3, 4, 5, 6]
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Conclusion</h4>
+            <p>Developers will be more capable of understanding and using frameworks if they are familiar with the fundamental ideas of vanilla JavaScript. As frameworks are constructed on top of plain JavaScript, it's critical to understand the fundamentals before utilizing them. Also, since the underlying code is still JavaScript, knowing the foundations 
+                of vanilla JavaScript can make it simpler to debug code created with a framework.</p>
+        </section>
+        <footer>
+            <p>65070127 Panalee chuckseeda</p>
+        </footer>
+</body>
+
+</html>

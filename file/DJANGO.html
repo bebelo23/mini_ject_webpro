@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="django.css">
+    <title>DJANGO</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="welcome">LET'S LEARN DJANGO</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JAVASCRIPT.html">JAVASCRIPT</a></li>
+            <li><a href="REACT.html">REACT</a></li>
+            <li><a href="ANGULAR.html">ANGULAR</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="VANILLA.html">VANILLA</a></li>
+            <li><a href="BOOTSTRAP.html">BOOTSTRAP</a></li>
+            <li><a href="TAILWIND.html">TAILWIND</a></li>
+            <li><a href="BULMA.html">BULMA</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="des-head">What is Django?</h2>
+            <p class="des-text">
+                Django is software you can use to develop web applications quickly and efficiently. Most web
+                applications have several common functions, like authentication, information retrieval from a database,
+                and cookie management. Developers have to code similar functionality into every web app they write.
+                Django makes their job easier by grouping the different functions into a large collection of reusable
+                modules, called a web application framework. Developers use the Django web framework
+                to organize and write their code more efficiently and significantly reduce web development time.
+            </p>
+        </section>
+        <br>
+        <section>
+            <h3>Why do web developers choose Django?</h3>
+            <p>
+                There are several web frameworks on the market. Django was written in the Python language, and it is one
+                among many Python web frameworks.
+                However, developers often prefer the Django web framework over others for the following reasons.</p>
+            <b>
+                Development speed
+            </b>
+            <p>
+                The Django framework is well organized and straightforward to install and learn, so you can get started
+                within hours. Django designers created the framework to quickly implement any web architecture in code.
+                It supports rapid development and clean, pragmatic design. You can write code in
+                just a few lines because Django provides a ready-to-use structure for several common web development
+                tasks, such as:
+            </p>
+            <ul>
+                <li>User authentication</li>
+                <li>Content administration</li>
+                <li>Site maps</li>
+                <li>RSS feeds</li>
+            </ul>
+            <b>Cost effective</b>
+            <p>
+                Django is a free and open-source Python project with an active community that reviews and maintains the
+                software.
+                A not-for-profit organization called the Django Software Foundation promotes and supports the use and
+                maintenance of Django. It runs regular meetups, gatherings, and community events that encourage other
+                developers to review and contribute to the Django project. The result is a high-quality, feature-rich
+                web framework that is free to use.
+            </p>
+            <b>Popular</b>
+            <p>
+                Thousands of open-source projects and high-profile sites use Django, such as:
+                <li>Instagram</li>
+                <li>Mozilla Firefox</li>
+                <li>Pinterest</li>
+                <li>National Geographic</li>
+            </p>
+        </section>
+        <br>
+        <section>
+            <h3>What other modules can you use in Django?</h3>
+            <p>Although the Model-View-Template (MVT) architecture defines the basic structure of any application,
+                Django has several other modules to enhance your website. We give some examples below.</p>
+            <ul>
+                <li>Forms
+                    <p>Most websites require forms, for tasks like
+                        registration and payment or to collect information from the website visitor. Django provides
+                        many tools and libraries that you can use to manage your website forms. It can simplify and
+                        automate form processing and can do so more securely than if you write the code yourself.
+                    </p>
+                    <p>Django handles form processing in three ways:</p>
+                <li>Form creation by preparing and restructuring data for display</li>
+                <li>Form validation by checking HTML forms on the client side</li>
+                <li>Form processing by receiving the submitted data</li>
+                </li>
+                <li>User authentication
+                    <p>
+                        Contemporary websites have to authenticate and authorize users. Authentication verifies a user's
+                        identity, and
+                        authorization decides what an authenticated user can do on the site. Django can manage
+                        authentication for various uses.
+                    </p>
+                <li>User accounts</li>
+                <li>Permissions and yes-or-no flags that allow users to perform certain website tasks</li>
+                <li>Groups of multiple user accounts with similar permissions</li>
+                <li>Cookie-based user sessions</li>
+                </li>
+                <li>Site administration
+                    <p>
+                        The Django administration site makes it straightforward to provide an admin page for your site.
+                        Site administrators can use the page to create, edit, or view the data models on your site.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>What is Django security?</h4>
+            <p>Cybercriminals often target web apps to access user login, financial data, and other sensitive
+                information. The Django web framework offers several features to protect your web apps and your users.
+                You avoid many common
+                security mistakes by following Django best practices. We give some examples below.
+            </p>
+            <b>Cross-site scripting protection</b>
+            <p>Cross-site scripting (XSS) attacks occur when cybercriminals insert malicious code into the browsers of
+                your website users.
+                They can attack your users by tricking your web app in several ways, such as:</p>
+            <li>Storing malicious scripts in your database so the server inadvertently sends malicious code in its next
+                response.</li>
+            <li>Tricking your users into clicking a link that causes malicious client code, instead of your code, to run
+                in the user's browser.</li>
+            <p>
+                Django protects you from such attacks by automatically escaping or
+                ignoring specific characters like < and>, which indicate a malicious code, from user input.
+            </p>
+
+            <b>Unauthorized access protection</b>
+            <p>
+                Cross-site request forgery (CSRF) attacks occur when hackers steal your users'
+                credentials and send unauthorized requests to your web app. Django has built-in protection against most
+                types of CSRF attacks in the Django CSRF module. It works by sending a secret value to every user at
+                their first login.
+            </p>
+            <p>
+                New client requests include the secret value as proof that the client is who they claim to be. Since
+                only the authorized user's browser knows the secret value, Django can automatically reject requests if
+                they come from some other machine that is pretending to be the user.
+                You must activate the Django CSRF module setting for it to work.
+            </p>
+
+            <b>SQL injection protection</b>
+            <p>
+                Cybercriminals use SQL injections to insert SQL code into your database by using HTTP requests such as
+                POST. The malicious code can steal or delete your genuine data. Django solves this problem in the design
+                itself. User-sent data, called parameters, are kept separate from the database query until it
+                reaches the model layer. The Django model can then escape dangerous characters when it is creating the
+                query code.
+            </p>
+
+            <b>Protection due to community support</b>
+            <p>
+                Protection in Django goes beyond its built-in security features.
+                Because Django is open source, many experienced developers use and review Django modules. Thorough
+                testing increases the Django code's reliability and prevents accidental security vulnerabilities from
+                being left behind.
+            </p>
+        </section>
+        <footer>
+            <p>65070127 Panalee chuckseeda</p>
+        </footer>
+</body>
+
+</html>

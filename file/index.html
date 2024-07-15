@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Web programming</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content slideshow">
+            <img src="slide1.jpg" alt="Slide 1" class="visible">
+            <img src="slide2.jpg" alt="Slide 2">
+            <img src="slide3.jpg" alt="Slide 3">
+            <h1 class="welcome">LET'S LEARN TOGETHER</h1>
+            <p class="welcome">welcome to new friends ! I'm so grateful that you were here</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JAVASCRIPT.html">JAVASCRIPT</a></li>
+            <li><a href="REACT.html">REACT</a></li>
+            <li><a href="ANGULAR.html">ANGULAR</a></li>
+            <li><a href="DJANGO.html">DJANGO</a></li>
+            <li><a href="VANILLA.html">VANILLA</a></li>
+            <li><a href="BOOTSTRAP.html">BOOTSTRAP</a></li>
+            <li><a href="TAILWIND.html">TAILWIND</a></li>
+            <li><a href="BULMA.html">BULMA</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="des-head">Welcome everyone!!</h2>
+            <p class="des-text">A resource for exploring the cutting-edge technology that powers the creation of
+                dynamic,
+                innovative websites. Whether you are an experienced developer or a tech enthusiast who wants to dive
+                into
+                the world of web development. We're here to bring you the latest trends, tools, and techniques shaping
+                the digital landscape.</p>
+        </section>
+        <section>
+            <div class="slideshow-word">
+                <span id="word1">HTML</span>
+                <span id="word2">CSS</span>
+                <span id="word3">JAVASCRIPT</span>
+                <span id="word4">REACT.JS</span>
+                <span id="word5">ANGULAR</span>
+                <span id="word6">DJANGO</span>
+                <span id="word7">TAILWIND</span>
+                <span id="word8">VANILLA</span>
+                <span id="word9">BULMA</span>
+                <span id="word10">BOOTSTRAP</span>
+            </div>
+        </section>
+        <div class="frame">
+            <br>
+            <p> >> WEB DEVELOPMENT LANGUAGES </p>
+            <div class="row1">
+                <div class="piece">
+                    <p>HTML</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="html">
+                </div>
+                <div class="piece">
+                    <p>CSS</p>
+                    <img src="css3.png" alt="css">
+                </div>
+                <div class="piece">
+                    <p>JAVASCRIPT</p>
+                    <img src="js.png" alt="js">
+                </div>
+                <p class="tellmore">
+                    HTML, CSS, and JavaScript are foundational technologies for
+                    web development, and they play crucial roles in building interactive and visually appealing
+                    websites.
+                </p>
+            </div>
+
+            <p> >> FRAMEWORKS </p>
+            <div class="row2">
+                <div class="piece">
+                    <p>REACT</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/640px-React_Logo_SVG.svg.png"
+                        alt="react">
+                </div>
+                <div class="piece">
+                    <p>ANGULAR</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/800px-Angular_full_color_logo.svg.png"
+                        alt="angular">
+                </div>
+                <div class="piece">
+                    <p>DJANGO</p>
+                    <img src="https://static-00.iconduck.com/assets.00/django-icon-1606x2048-lwmw1z73.png" alt="django">
+                </div>
+                <p class="tellmore">
+                    React, Angular, and Django are all powerful tools in web development, each serving different
+                    purposes
+                    in the development process. The importance of each depends on the specific requirements of your
+                    project
+                </p>
+            </div>
+            <p> >> CSS FRAMEWORKS </p>
+            <div class="row3">
+                <div class="piece">
+                    <p>VANILLA</p>
+                    <img src="https://avatars.githubusercontent.com/u/112610040?s=280&v=4" alt="vanilla">
+                </div>
+                <div class="piece">
+                    <p>BOOTSTRAP</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+                        alt="bootstrap">
+                </div>
+                <div class="piece">
+                    <p>TAILWIND</p>
+                    <img src="tailwind.png" alt="tailwind">
+                </div>
+                <div class="piece">
+                    <p>BULMA</p>
+                    <img src="https://reliutg.gallerycdn.vsassets.io/extensions/reliutg/bulma-css-class-completion/0.8.0/1698584901059/Microsoft.VisualStudio.Services.Icons.Default"
+                        alt="Bulma">
+                </div>
+                <p class="tellmore">
+                    The importance of Vanilla CSS, Bootstrap, Tailwind CSS, and Bulma depends on your specific
+                    project requirements, your development team's expertise, and the design principles you want to follow
+                </p>
+            </div>
+            <img src="cute.png" alt="com" class="cute-image">
+        </div>
+    </main>
+
+    <footer>
+        <p>65070127 Panalee chuckseeda</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var images = document.querySelectorAll(".slideshow img");
+            var currentImageIndex = 0;
+
+            function nextImage() {
+                images[currentImageIndex].classList.remove("visible");
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].classList.add("visible");
+            }
+
+            
+            setInterval(nextImage, 4000);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var words = ["HTML", "CSS", "JAVASCRIPT", "REACT.JS", "ANGULAR", "DJANGO", "TAILWIND", "VANILLA", "BULMA", "BOOTSTRAP","REFERENCES"];
+            var currentWordIndex = 0;
+
+            function animateWords() {
+               
+                document.getElementById("word" + (currentWordIndex + 1)).style.color = "#fff";
+
+               
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+
+                
+                document.getElementById("word" + (currentWordIndex + 1)).style.color = "purple";
+            }
+
+            
+            setInterval(animateWords, 200);
+        });
+
+    </script>
+</body>
+
+</html>

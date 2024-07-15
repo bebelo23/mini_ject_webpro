@@ -1,0 +1,126 @@
+body {
+    font-family: 'Sixtyfour', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b263b; /* Swapped with #000814 */
+}
+
+header.hero {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('slide3.jpg') center/cover no-repeat; /* Set image as background */
+}
+
+h1.welcome {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+    padding: 10px;
+}
+
+body * {
+    transition: color 0.3s ease-in-out;
+}
+
+body *:hover {
+    color: #ffd60a; /* Swapped with #ffc300 */
+}
+
+nav {
+    background-color: #003566;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+main {
+    padding: 20px;
+    background-color:#1b263b; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.des-head{
+    color: #cb3737;
+}
+.des-text {
+    font-size: 14px;
+    color: #fff; 
+    transition: color 0.3s ease-in-out;
+    padding-left: 80px;
+    padding-right:80px;
+}
+.des-text:hover {
+    color: #ffd60a; /
+}
+section p {
+    color: #fff; 
+    font-size: 12px;
+    padding-left: 80px;
+}
+h3, h4{
+    color:#49ae33;
+}
+.gray-container1 {
+    border: 1px solid #808080;
+    padding: 10px;
+    width: 30%; 
+    margin: auto; 
+}
+
+.gray {
+    border: 1px solid #808080;
+    padding: 10px; 
+    color: #808080;
+    font-family: 'Sixtyfour', serif; 
+    display: inline-block; 
+}
+.special p{
+    margin-left: 3%;
+    font-size: 9px;
+    color: rgb(163, 232, 255);
+}
+section ul {
+    color: #fff;
+    font-size: 12px;
+    padding: 2px;
+    padding-left: 4%;
+}
+footer {
+    background-color: #e5e5e5; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+ b{
+    color: aqua;
+ }

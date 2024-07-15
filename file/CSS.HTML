@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <title>CSS</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="welcome">LET'S LEARN CSS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="JAVASCRIPT.html">JAVASCRIPT</a></li>
+            <li><a href="REACT.html">REACT</a></li>
+            <li><a href="ANGULAR.html">ANGULAR</a></li>
+            <li><a href="DJANGO.html">DJANGO</a></li>
+            <li><a href="VANILLA.html">VANILLA</a></li>
+            <li><a href="BOOTSTRAP.html">BOOTSTRAP</a></li>
+            <li><a href="TAILWIND.html">TAILWIND</a></li>
+            <li><a href="BULMA.html">BULMA</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <section>
+                <h2 class="des-head">What Is CSS and How Does It Work?</h2>
+                <p class="des-text">
+                <p>CSS was developed by W3C (World Wide Web Consortium) in 1996 for a rather simple reason. HTML
+                    element was not designed to have tags that would help format the page. You were only supposed to
+                    write the markup for the web page.</p>
+
+                <p>Tags like <font> were introduced in HTML version 3.2, and it caused quite a lot of trouble for web
+                        developers. Due to the fact that web pages have different fonts, colored backgrounds, and
+                        multiple styles, it was a long, painful, and expensive process to rewrite the code. Thus, CSS
+                        was created by W3C to solve this problem.</p>
+
+                <p>CSS is not technically a necessity, but you probably wouldn’t want to look at a web page that
+                    features only HTML elements as it would look completely bare-boned.</p>
+                </p>
+            </section>
+        </section>
+        <section>
+            <h3>How Does CSS Work?</h3>
+            <p> CSS uses a simple English based syntax with a set of rules that govern it. Like we’ve mentioned before,
+                HTML was never
+                intended to use style elements, only the markup of the page. It was created to merely describe the
+                content. For example:</p>
+            <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;.</p>
+            <br>
+            <p>
+                But how do you style the paragraph? The CSS syntax structure is pretty simple. It has a selector and a
+                declaration block.
+                You select an element and then declare what you want to do with it. Pretty straightforward, right?
+            </p>
+            <br>
+            <p>
+                However, there are rules you have to remember. The structure rules are pretty simple, so don’t worry.
+            </p>
+            <br>
+            <p>
+                The selector points to the HTML elements you want to style. The declaration block contains one
+                or more declarations separated by semicolons.
+            </p>
+            <br>
+            <p>
+                Each declaration includes a CSS property name and a value, separated by a colon.
+                A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+                Let’s look at an example:
+            </p>
+        </section>
+
+        <section>
+            <p>All of the &lt;p&gt; elements will be colored blue and bolded.</p>
+            <div class="special">
+                <div class="gray-container1">
+                    <p>&lt;style&gt;</p>
+                    <br>
+                    <p> p {</p>
+                    <p>color: blue;</p>
+                    <p>text-weight: bold;</p>
+                    <p>}</p>
+                    <p>&lt;style&gt;</p>
+                </div>
+            </div>
+            <p>In another example, all
+            <p> elements will be center-aligned, be 16x wide and pink.</p>
+            <div class="special">
+                <div class="gray-container1">
+                    <p>&lt;style&gt;</p>
+                    <br>
+                    <p> p {</p>
+                    <p> text-align: center;</p>
+                    <p>font-size: 16px;</p>
+                    <p>color: pink;</p>
+                    <p>}</p>
+                    <p>&lt;style&gt;</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Internal, External and Inline CSS Styles</h3>
+            <p>
+                We’ll go over each style briefly, for an in-depth explanation of each method, there will be a link below
+                the overview.
+            </p>
+            <p>
+                Let’s start by talking about the Internal style. CSS styles done this way are loaded each time an entire
+                website is refreshed, which may increase loading time. Additionally,
+                you won’t be able to use the same CSS style on multiple pages as it’s contained within a single page.
+                However, this also comes with benefits. Having everything on one page makes it easier to share the
+                template for a preview.
+            </p>
+            <p>
+                The External method might be the most convenient one. Everything is done externally on a .css file.
+                This means you can do all the styling on a separate file and apply the CSS to any page you want. The
+                External style might also improve loading times.
+            </p>
+            <p>
+                Lastly, we will talk about the Inline style of CSS. Inline works with
+                specific elements that have the &lt;style&gt;
+                    tag. Each component has to be stylized,
+                    so it might not be the best or fastest way to handle CSS. But it can come in handy. For example,
+                    if you want to change a single element,
+                    quickly preview changes,
+                    or maybe you don’t have access to the CSS files. 
+            </p>
+        </section>
+        <section>
+            <h3>Conclusion</h3>
+            <P>
+                Let’s sum up what we have learned here about CSS and how it helps with the aesthetic of web pages:
+            </p>
+            <ul>
+                <li> CSS was created to work in conjunction with other markup languages like HTML. It is used to stylize a page.</li>
+                <li> There are three styles of implementing CSS, and you can use the External style to accord multiple pages at once.</li>
+                <li>You won’t go far without seeing some kind of CSS implementation nowadays since it’s as much of a requirement as the markup language itself.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>What Is the Difference Between HTML and CSS?</h3>
+            <p>As a markup programing language, HTML is used to create static websites. CSS, on the other hand, is a style sheet language 
+                used to define the style and overall presentation of different files and page elements in a markup language like HTML.
+            </p>
+        </section>
+        <footer>
+            <p>65070127 Panalee chuckseeda</p>
+        </footer>
+    </main>
+</body>
+</html>
